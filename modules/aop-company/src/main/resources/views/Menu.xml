@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<object-views xmlns="http://axelor.com/xml/ns/object-views"
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:schemaLocation="http://axelor.com/xml/ns/object-views
+	  http://axelor.com/xml/ns/object-views/object-views_5.4.xsd">
+	
+		<!--  parent menu  -->
+		  <menuitem title="Company" 
+		  			name="menu-company"/>
+		  			
+		<!--  child menu  -->
+		<menuitem title="Employee Detail" 
+				  name="menu-company-employee"
+				  parent="menu-company"
+				  action="employee.click"/>  
+				  
+		<menuitem title="Project" 
+				  name="menu-company-project"
+				  parent="menu-company"
+				  action="project.click"/>
+				  
+		<menuitem title="Salary" 
+				  name="menu-company-salary"
+				  parent="menu-company"
+				  action="salary.click"/>	  
+				  
+				  
+		<action-view name="employee.click" 
+					 title="Employees" 
+					 model="com.axelor.company.db.Employee">		 
+			<view type="grid" name="employee-grid"/>
+			<view type="form" name="employee-form"/>
+		</action-view>
+			
+		<action-view name="project.click" 
+					 title="Projects" 
+					 model="com.axelor.company.db.Project">		 
+			<view type="grid" name="project-grid"/>
+			<view type="form" name="project-form"/>
+		</action-view>
+		
+		<action-view name="salary.click" 
+					 title="salaries" 
+					 model="com.axelor.company.db.Salary">		 
+			<view type="grid" name="salary-grid"/>
+			<view type="form" name="salary-form"/>
+		</action-view>
+		
+	</object-views>
