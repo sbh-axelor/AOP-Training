@@ -5,9 +5,11 @@
   http://axelor.com/xml/ns/object-views/object-views_5.4.xsd">
 
  <grid model="com.axelor.company.db.Employee" title="Employees" name="employee-grid" id="101">
+ 	<field name="empName"/>
   	<field name="firstName"/>
   	<field name="lastName"/>
   	<field name="designation"/>  
+  	
   </grid>
   
   <form model="com.axelor.company.db.Employee" title="Employee" name="employee-form">

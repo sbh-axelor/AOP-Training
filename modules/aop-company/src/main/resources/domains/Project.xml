@@ -10,6 +10,7 @@
 	  <string name="projectName" />
 	  <string name="projectManager"/>
 	  <date name="startDate"/>
+	  
   </entity>
   
  </domain-models>

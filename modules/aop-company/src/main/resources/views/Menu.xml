@@ -19,10 +19,10 @@
 				  parent="menu-company"
 				  action="project.click"/>
 				  
-		<menuitem title="Salary" 
-				  name="menu-company-salary"
+		<menuitem title="Department" 
+				  name="menu-company-department"
 				  parent="menu-company"
-				  action="salary.click"/>	  
+				  action="department.click"/>	  
 				  
 				  
 		<action-view name="employee.click" 
@@ -39,11 +39,11 @@
 			<view type="form" name="project-form"/>
 		</action-view>
 		
-		<action-view name="salary.click" 
-					 title="salaries" 
-					 model="com.axelor.company.db.Salary">		 
-			<view type="grid" name="salary-grid"/>
-			<view type="form" name="salary-form"/>
+		<action-view name="department.click" 
+					 title="Departments" 
+					 model="com.axelor.company.db.Department">		 
+			<view type="grid" name="dept-grid"/>
+			<view type="form" name="dept-form"/>
 		</action-view>
 		
 	</object-views>

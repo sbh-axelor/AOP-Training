@@ -9,7 +9,13 @@
   <entity name="Employee">
   	<string name="firstName"/>
   	<string name="lastName"/>
+  	<string name="empName" title="Employee Name" >
+ 		<![CDATA[ return ("firstName" + " " + "lastName"]]>
+ 	</string>
   	<string name="designation"/>
+  	<one-to-many ref="Department" name="deptEmpl" mappedBy="emplDept"/>
+<!--   	<many-to-many ref="Employee" name="EmpProj"/> -->
+<!--   	<many-to-one ref="Employee" name="EmpMgr" /> -->
   </entity>
 
 </domain-models>
